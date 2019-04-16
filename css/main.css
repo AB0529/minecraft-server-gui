@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #2F2F2F;
+  color: white;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#tConsole {
+  font-size: 18px;
+  left: 10px;
+  top: 10px;
+  width: calc(50vw);
+  height: calc(50vh);
+  resize: none;
+  color: black;
+  background:#fff;
+  opacity: 0.5;
+  border-radius: 3px;
+  line-height: 2em;
+  border: none;
+  box-shadow:0px 0px 5px 1px rgba(0,0,0,0.1);
+  padding:30px;
+}
+
+.center {
+  width: 50%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.cmd_input {
+  color: white;
+  height: 25px;
+  width: 500px;
+  font-size: 18px;
+  opacity: 0.5;
+  background:#fff;
+  border-radius: 3px;
+  line-height: 2em;
+  border: none;
+  box-shadow:0px 0px 5px 1px rgba(0,0,0,0.1);
+  padding:30px;
+  color: black;
+}
+
+button {
+  font-size: 28px;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.start {
+  background: rgb(28, 184, 65);
+}
+
+.stop {
+  background: rgb(202, 60, 60);
+}
+
+.restart {
+  background: rgb(66, 184, 221);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Minecraft</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- Server Status -->
+  <div id="status" class="center center-text">
+    <!-- ✅  ⚪-->
+    <h1>
+      <span id="statEmote">⚪</span>
+      Server is currently
+      <span id="statText" style="color: #D84C4C">OFFLINE</span>
+    </h1>
+  </div>
+  <!-- Start, Stop, Restart -->
+  <div id="buttons" class="center center-text">
+    <button class="start" onclick="start();">Start</button>
+    <button class="restart" onclick="restart();">World</button>
+    <button class="stop" onclick="stop();">Stop</button>
+  </div>
+
+  <!-- Console -->
+  <div id="console" class="center">
+    <textarea id="tConsole" type="textarea" warp=on spellcheck="false" readonly></textarea>
+  </div>
+
+  <!-- Input command -->
+  <div class="center center-text">
+    <form onsubmit="run(this.form); return false">
+      <input class="cmd_input" id="command" autocomplete="off" placeholder="ban EmperorSR" name="command"></input>
+      <input type="submit" style="position: absolute; left: -9999px"></input>
+    </form>
+  </div>
+
+</body>
+
+</html>
